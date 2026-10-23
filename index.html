@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Did the Spurs invent modern shot selection?</title>
-<meta name="description" content="Everyone knows the answer. Bruce Bowen in the corner, Danny Green in the corner, the extra pass, the Beautiful Game — San Antonio as the franchise that understood shot value before">
+<title>How the Spurs&#x27; shot mix changed</title>
+<meta name="description" content="Did San Antonio adopt the league&#x27;s eventual shot-location pattern earlier than other teams? This study compares five-zone attempt profiles from 2003–04 through 2024–25. Its “years ">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
 <style>
 :root{
@@ -99,315 +99,55 @@ figure img{display:block;width:100%;height:auto;border:1px solid var(--rule);bor
 </style>
 </head>
 <body>
-<header class="bar"><div class="wrap"><span class="slug">spurs-shot-selection</span><nav><a href="docs/method.html">method</a><a href="https://github.com/jmsmarrelli/spurs-shot-selection">repository</a><a href="https://jmsmarrelli.github.io/basketball-analytics/">all projects</a></nav></div></header>
+<header class="bar"><div class="wrap"><span class="slug">spurs-shot-selection</span><nav><a href="docs/method.html">method</a></nav></div></header>
 <main><div class="wrap">
-<h1>Did the Spurs invent modern shot selection?</h1>
-<p>Everyone knows the answer. Bruce Bowen in the corner, Danny Green in the corner,
-the extra pass, the Beautiful Game — San Antonio as the franchise that understood
-shot value before the league did.</p>
-<p>659 team-seasons of shot data, 2003-04 to 2024-25, says the reputation is
-half-earned and half-backwards.</p>
-<p><strong>Across twenty-two seasons San Antonio's shot chart sits 0.13 years <em>behind</em> the
-league's own trajectory — 16th of 34 teams.</strong> Houston is +5.75. Seattle,
-over the five seasons it existed in this window, is +3.71. (Relocated and renamed
-franchises are counted under each name, which is where 34 comes from.) Golden State is +2.65.
-The Spurs are average, and the average conceals two eras that could not be less
-alike.</p>
-<hr>
-<h2>Three different questions</h2>
-<p>The argument is usually had without settling which claim is being made, so all
-three get asked separately.</p>
-<h3>Volume: no</h3>
-<figure><img loading="lazy" alt="Three-point rate" src="figures/01_three_rate.png"></figure>
-<p>San Antonio never led the league in three-point rate. Their best finish in
-twenty-two seasons is sixth. From 2018-19 through 2020-21 they finished <strong>30th,
-28th and 30th</strong> — last, third-last, last — in a league that had already decided
-the argument.</p>
-<h3>The corner: yes, and emphatically</h3>
-<figure><img loading="lazy" alt="Corner rate" src="figures/02_corner_rate.png"></figure>
-<p>This is the part of the reputation that is real. San Antonio finished <strong>first,
-second or third in corner-three rate in eight of the nine seasons from 2004-05
-through 2012-13</strong>, at a time when the league average was barely six percent of
-attempts. They were not shooting more threes than anyone. They were shooting
-better ones.</p>
-<h3>The whole chart: average, with two opposite halves</h3>
-<figure><img loading="lazy" alt="Years ahead" src="figures/03_years_ahead.png"></figure>
-<p>Projecting every team-season onto the direction the league itself traveled — out
-of the mid-range, into the corners and above the break — dates each shot chart
-against the league's own calendar.</p>
+<h1>How the Spurs' shot mix changed</h1>
+<p>Did San Antonio adopt the league's eventual shot-location pattern earlier than other teams? This study compares five-zone attempt profiles from 2003–04 through 2024–25. Its “years ahead” measure is a retrospective projection onto the league trajectory. It does not measure offensive quality or establish who invented a strategy.</p>
+<h2>What the comparison shows</h2>
 <div class="tw"><table>
 <thead>
 <tr>
-<th>Era</th>
-<th>Years ahead of the league</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>2004-05 to 2006-07</td>
-<td><strong>+6.2, +4.4, +4.1</strong></td>
-</tr>
-<tr>
-<td>2010-11 to 2012-13</td>
-<td>+2.9, +2.8, +1.3</td>
-</tr>
-<tr>
-<td>2015-16 to 2020-21</td>
-<td><strong>−5.9, −3.3, −1.9, −3.5, −3.1, −3.2</strong></td>
-</tr>
-<tr>
-<td>2023-24 to 2024-25</td>
-<td>+0.1, +0.9</td>
-</tr>
-</tbody>
-</table></div>
-<p>The Bowen-era Spurs were four to six years ahead. The DeMar DeRozan and LaMarcus
-Aldridge Spurs were behind by as much as six, and took a larger share of their
-shots from the mid-range than any other team in the league in four of the five
-seasons from 2016-17 to 2020-21. Same building, same coach, two opposite
-philosophies, ten years apart.</p>
-<hr>
-<h2>Who was actually early</h2>
-<figure><img loading="lazy" alt="Ranking" src="figures/04_ranking.png"></figure>
-<div class="tw"><table>
-<thead>
-<tr>
-<th></th>
+<th>Team</th>
+<th>Seasons</th>
 <th>Years ahead</th>
 <th>Corner rank</th>
-<th>Three-rate rank</th>
+<th>Three rank</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Houston</td>
-<td class="num"><strong>+5.75</strong></td>
-<td class="num">10.7</td>
-<td class="num">6.1</td>
-</tr>
-<tr>
-<td>Seattle <em>(5 seasons)</em></td>
-<td class="num">+3.71</td>
-<td class="num">14.8</td>
-<td class="num">10.0</td>
-</tr>
-<tr>
-<td>Golden State</td>
-<td class="num">+2.65</td>
-<td class="num">12.7</td>
-<td class="num">7.9</td>
-</tr>
-<tr>
-<td>Brooklyn <em>(13 seasons)</em></td>
-<td class="num">+2.32</td>
-<td class="num">11.2</td>
-<td class="num">10.2</td>
-</tr>
-<tr>
-<td>Memphis</td>
-<td class="num">+1.80</td>
-<td class="num">19.8</td>
-<td class="num">20.4</td>
-</tr>
-<tr>
-<td><strong>San Antonio</strong></td>
-<td class="num"><strong>−0.13</strong></td>
-<td class="num">11.7</td>
-<td class="num">16.7</td>
-</tr>
-<tr>
-<td>Philadelphia</td>
-<td class="num">−2.58</td>
-<td class="num">20.4</td>
-<td class="num">19.4</td>
-</tr>
-<tr>
-<td>Detroit</td>
-<td class="num">−3.73</td>
-<td class="num">14.3</td>
-<td class="num">19.9</td>
-</tr>
-<tr>
-<td>Chicago</td>
-<td class="num">−3.79</td>
-<td class="num">19.2</td>
-<td class="num">20.9</td>
+<td>SAS</td>
+<td class="num">22</td>
+<td class="num">-0.128</td>
+<td class="num">11.727</td>
+<td class="num">16.682</td>
 </tr>
 </tbody>
 </table></div>
-<p>Memphis is the interesting name on that list, and the reason is worth stating,
-because it is what made me rebuild the metric — and because the rebuild did not
-make it go away.</p>
-<p>Memphis's +1.80 is an average of two eras pointing opposite ways. The Pau Gasol
-teams of 2003-04 to 2007-08, coached first by Hubie Brown and then Mike
-Fratello, score +5 to +8. The recent Ja
-Morant teams score +2 to +6. In between, the grit-and-grind years everyone
-remembers score <strong>−1 to −4.8</strong> — the least modern shot charts in the league at
-the time, which the metric gets right and the franchise's reputation does not.</p>
-<p>The early ones are the problem. Memphis in 2003-04 took 28.4% of its shots from
-the mid-range against a league average of 35.8% — the lowest share in the league.
-Its three-point rate was 19.3% against a league average of 18.3%: completely
-ordinary. It emptied the mid-range into the rim, not into threes, and the metric
-reads that as eight years early. That is not a bug I fixed; it is what the
-measurement means, and it is stated as such below.</p>
-<hr>
-<h2>What the metric is, and why it is not a nearest-neighbour match</h2>
-<p>The obvious construction is to find the point on the league's path closest to a
-team's mix and read off the year. I built that first. It fails in two ways that
-have nothing to do with each other.</p>
-<p><strong>It saturates.</strong> The nearest point on the path can only be a season the league
-actually played, so any team more extreme than either end of the path gets pinned
-to that end. Under a nearest-neighbour match the 2017-18 Rockets — the most
-extreme shot chart in the sample by a distance — come out three years ahead,
-because there was nothing further along the path to match them to. Denver in
-2005-06, whose mix is behind anything the league has done since, comes out as
-<em>contemporary</em> for the same reason in reverse.</p>
-<p><strong>It puts two different ideas in one number.</strong> A team can be far along the path
-or far away from it, and a nearest-neighbour match assigns both to whichever
-season happens to be closest. Being unusual and being early end up indistinguishable.</p>
-<p>The version in the repository projects instead. The league's own trajectory has a
-direction; <strong>98.7% of its movement over twenty-two seasons lies on a single
-axis</strong>, weighted:</p>
-<div class="tw"><table>
-<thead>
-<tr>
-<th>Zone</th>
-<th>Loading</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Mid-range</td>
-<td class="num"><strong>−0.795</strong></td>
-</tr>
-<tr>
-<td>Above-the-break three</td>
-<td class="num"><strong>+0.554</strong></td>
-</tr>
-<tr>
-<td>Paint, off the rim</td>
-<td class="num">+0.185</td>
-</tr>
-<tr>
-<td>Corner three</td>
-<td class="num">+0.140</td>
-</tr>
-<tr>
-<td>At the rim</td>
-<td class="num">−0.085</td>
-</tr>
-</tbody>
-</table></div>
-<p>Every team-season is projected onto that axis and the projection is read back as
-a season using the league's own monotone score-to-year curve. Deviation <em>across</em>
-the axis — being unusual rather than early — is reported separately, and it is
-its own small finding: averaged over their seasons, Houston and Memphis are the
-two least conventional franchises in the sample, from opposite directions.</p>
-<p>What the projection does not fix is the shape of the axis itself. Mid-range
-carries −0.795 and above-the-break threes +0.554, because that is where the
-league moved, so emptying the mid-range is worth more than filling the arc.
-<code>output/nn_comparison.csv</code> has both metrics side by side for all 659
-team-seasons; 21% of them sit outside the league path's own range and would have
-been pinned to one of its ends by the version I did not keep.</p>
-<hr>
-<h2>The championship team</h2>
-<figure><img loading="lazy" alt="Dynasty mix" src="figures/05_dynasty_mix.png"></figure>
-<p>Averaged over 2010-11 to 2015-16, the years the argument is usually about:</p>
-<div class="tw"><table>
-<thead>
-<tr>
-<th></th>
-<th>San Antonio</th>
-<th>League</th>
-<th>Mean rank</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Three-point rate</td>
-<td class="num">25.3%</td>
-<td class="num">24.7%</td>
-<td>13.0 of 30</td>
-</tr>
-<tr>
-<td>Corner-three rate</td>
-<td class="num"><strong>8.3%</strong></td>
-<td class="num"><strong>6.7%</strong></td>
-<td><strong>7.0 of 30</strong></td>
-</tr>
-<tr>
-<td>Mid-range rate</td>
-<td class="num">27.0%</td>
-<td class="num">28.0%</td>
-<td>11.7 of 30</td>
-</tr>
-<tr>
-<td>Value of the shot mix</td>
-<td class="num">1.014</td>
-<td class="num">1.016</td>
-<td>14.0 of 30</td>
-</tr>
-<tr>
-<td>Years ahead of the league</td>
-<td class="num"><strong>+0.27</strong></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table></div>
-<p>A very good team with an unremarkable shot chart and one genuinely distinctive
-habit. Their three-point rate was six tenths of a point above league average.
-Their mix was worth <em>less</em> than the league's at fixed conversion. The 2013-14
-championship team ranked sixteenth in three-point volume and twelfth in the value
-of its shot mix.</p>
-<p>None of which is a criticism. It is a claim about what the edge was. That team
-won with passing, defense and a center who protected the rim, and it took one
-kind of shot better than anyone. Shot selection as a whole was not where it beat
-people. It got credited with it afterwards, because by the time the story was
-written down the league had decided shot selection was what mattered, and the
-Spurs were the team everyone was busy explaining.</p>
-<hr>
-<h2>What this does not measure</h2>
-<ul>
-<li><strong>Shot selection, not offense.</strong> Where a team shoots from says nothing about
-  whether it got a good look there, who created it, or what happened on the
-  possessions that ended without a shot.</li>
-<li><strong>Five zones.</strong> Coarse on purpose: it is the only description of a shot whose
-  meaning survives twenty-two years of the NBA changing how it records them. It
-  cannot see a 24-footer becoming a 28-footer.</li>
-<li><strong>Free throws are absent</strong>, so a team that lives at the line looks less
-  efficient here than it was.</li>
-<li><strong>Franchises, not rosters.</strong> Seattle appears for five seasons and Brooklyn for
-  thirteen; their averages are over what the data contains, and short samples sit
-  higher in the ranking than they have earned.</li>
-<li><strong>Regular season only.</strong></li>
-</ul>
-<hr>
-<h2>Running it</h2>
-<pre><code class="language-bash">pip install -r requirements.txt
-python src/run_01_build.py   # raw shot files -&gt; a shot profile per team-season
-python src/run_02_ahead.py   # the league axis and the dating, figures 01-05
+<p>Source: <a href="output/team_ranking.csv">team_ranking.csv</a>.</p>
+<p>San Antonio's average hides large differences between eras. Its corner-three emphasis was more distinctive than its overall three-point volume. The principal-component projection also rewards movement away from midrange shots; a high score need not come from taking more threes.</p>
+<figure><img loading="lazy" src="figures/02_corner_rate.png" alt="Spurs corner-three share" /></figure>
+<figure><img loading="lazy" src="figures/03_years_ahead.png" alt="Historical shot-profile projection" /></figure>
+<p>The league trajectory is fitted using the whole historical sample. Calling a 2004 team “ahead” uses knowledge of later league behavior. That is appropriate for a historical comparison but would leak future information if used as a contemporaneous prediction.</p>
+<h2>Method and sensitivity</h2>
+<p>Team-season shot shares are projected onto the leading principal component of the league's zone shares, then mapped onto the league's score-to-year path. The off-axis distance describes how unusual a profile is. A <a href="output/nn_comparison.csv">nearest-neighbor comparison</a> shows where matching to observed seasons clips extreme profiles.</p>
+<p>Five zones discard distance and shot-creation detail. Franchise labels cover unequal periods; averaging them does not hold personnel or opponents constant. The output cannot establish that shifting an attempt to a different zone would improve scoring.</p>
+<h2>Front office implications</h2>
+<p>Use the historical profiles to distinguish a team's shot-location identity from its reputation. For a current player or roster decision, add who creates the attempts, possession outcomes without a shot, and film on the availability of alternative attempts. The current files support the descriptive comparison only.</p>
+<h2>Reproduce</h2>
+<p>The historical analysis used Python 3.12 with the pinned dependencies below. From this repository:</p>
+<pre><code class="language-bash">python3.12 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+make fetch-data PY=python
+make all PY=python
+make report site PY=python
 </code></pre>
-<p>Or <code>make all</code>. Under a minute.</p>
-<pre><code>src/
-  config.py      paths, seasons, the comparison teams
-  features.py    raw rows -&gt; features, coordinate repair, heave filter
-  ahead.py       the league axis, the projection, and why it is not a match
-  court.py       half-court drawing in the data's own coordinates
-  labels.py      collision-resolving point labels
-  style.py       one place that decides what every figure looks like
-  run_0*.py      the pipeline, in order
-output/          every number quoted above, as CSV
-figures/         five figures, regenerated from scratch by the pipeline
-docs/method.md   longer notes, including the version that did not work
-</code></pre>
-<h2>Data</h2>
-<p>Shot-level files from <a href="https://github.com/DomSamangy/NBA_Shots_04_24">DomSamangy/NBA_Shots_04_24</a>.
-<code>data/README.md</code> has the fetch step and the two coordinate problems the raw files
-carry.</p>
-<h2>License</h2>
-<p>MIT. See <code>LICENSE</code>.</p>
+<p><code>make all</code> verifies source hashes before running the analyses in order. A missing or changed input stops the build. Data downloads need network access; article rendering uses the included result tables. See <a href="data/source_manifest.json">the source manifest</a>, <a href="docs/method.md">method notes</a> and <a href="VALIDATION_CURRENT.md">current validation record</a> for the distinction between a source rebuild and checks of delivered outputs.</p>
+<p>Season keys in CSV files use the <strong>ending year</strong>: <code>2025</code> means 2024–25. Display tables use full season labels. The MIT license covers code; third-party data retain their providers' rights and terms.</p>
+<p><a href="https://github.com/jmsmarrelli/basketball-analytics">Portfolio</a> · <a href="PROVENANCE.md">AI assistance and provenance</a></p>
+
 </div></main>
-<footer class="foot"><div class="wrap"><span>spurs-shot-selection</span><span>figures and tables regenerated by the pipeline in this repository</span></div></footer>
+<footer class="foot"><div class="wrap"><span>spurs-shot-selection</span><span>source, results and validation notes in the repository</span></div></footer>
 </body>
 </html>

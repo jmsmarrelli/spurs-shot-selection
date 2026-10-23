@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Method notes</title>
-<meta name="description" content="The metric, the version of it that was wrong, and what the whole thing cannot see.">
+<meta name="description" content="This is a historical comparison through 2024–25. “Years ahead” projects a team’s shot mix onto the league’s observed trajectory; it is not a forecast, an efficiency ranking, or pro">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
 <style>
 :root{
@@ -99,15 +99,16 @@ figure img{display:block;width:100%;height:auto;border:1px solid var(--rule);bor
 </style>
 </head>
 <body>
-<header class="bar"><div class="wrap"><span class="slug">spurs-shot-selection</span><nav><a href="../index.html">findings</a><a href="https://github.com/jmsmarrelli/spurs-shot-selection">repository</a><a href="https://jmsmarrelli.github.io/basketball-analytics/">all projects</a></nav></div></header>
+<header class="bar"><div class="wrap"><span class="slug">spurs-shot-selection</span><nav><a href="../index.html">findings</a></nav></div></header>
 <main><div class="wrap">
 <h1>Method notes</h1>
+<p>This is a historical comparison through 2024–25. “Years ahead” projects a team’s shot mix onto the league’s observed trajectory; it is not a forecast, an efficiency ranking, or proof that a team invented a strategy. Franchise labels follow the source and span unequal numbers of seasons.</p>
 <p>The metric, the version of it that was wrong, and what the whole thing cannot see.</p>
 <h2>The unit</h2>
 <p>A team-season's mix across five zones: restricted area, paint outside it,
 mid-range, corner three, above the break. Five numbers summing to one.</p>
 <p>Coarse on purpose. The NBA's action-type vocabulary was rewritten between 2007
-and 2009 — "pull-up jump shot" and "step back jump shot" do not exist in the
+and 2009 — &quot;pull-up jump shot&quot; and &quot;step back jump shot&quot; do not exist in the
 2003-04 file — and its shot coordinates were recorded differently before 2010-11,
 when roughly a quarter of all attempts carry the rim's own coordinate rather than
 the shooter's. A five-bucket zone label is the only description of a shot that
@@ -115,7 +116,7 @@ means the same thing at both ends of this sample, so it is what the analysis run
 on, and nothing here depends on a coordinate comparison across 2010-11.</p>
 <h2>Dating a shot chart</h2>
 <p>The league's own mix traces a path through the five-zone simplex, one point per
-season. Every team-season is somewhere near it. "Years ahead" is the distance
+season. Every team-season is somewhere near it. &quot;Years ahead&quot; is the distance
 along that path, converted to seasons.</p>
 <p><strong>The construction that failed.</strong> Find the nearest point on the path and read off
 its year. It fails in two unrelated ways, and neither is the one I expected.</p>
@@ -175,26 +176,26 @@ shots from the mid-range against a league average of 35.8% — the lowest share 
 the league — and 19.3% from three against a league average of 18.3%, which is
 ordinary. They emptied the mid-range into the restricted area. Nearest-neighbour
 calls them +8.0 years ahead; the projection calls them +7.8. This is not an
-artifact to be engineered away: it is what "resembles the league's future"
+artifact to be engineered away: it is what &quot;resembles the league's future&quot;
 means when the league's future was defined mostly by a subtraction. The
 <code>off_axis</code> column is what flags it, and any use of the headline number should be
 read next to it.</p>
 <p>Two details:</p>
 <ul>
-<li>The path is smoothed with a three-season centered window before the
-  decomposition. Season-to-season wobble in a thirty-team average is small but
-  not zero, and matching against an unsmoothed path turns it into fake precision.</li>
+<li>The path is smoothed with a three-season centred window before the
+decomposition. Season-to-season wobble in a thirty-team average is small but
+not zero, and matching against an unsmoothed path turns it into fake precision.</li>
 <li>Teams past either end of the observed path are extrapolated along the axis and
-  then clipped at eight years. 46 of 659 team-seasons hit that clip, all of them
-  extreme in the expected directions, and <code>output/years_ahead.csv</code> flags each one.</li>
+then clipped at eight years. 46 of 659 team-seasons hit that clip, all of them
+extreme in the expected directions, and <code>output/years_ahead.csv</code> flags each one.</li>
 </ul>
-<h2>What "years ahead" is not</h2>
+<h2>What &quot;years ahead&quot; is not</h2>
 <p>It is not a quality measure. A shot chart five years ahead of the league is a
 shot chart that resembles the future, and the future is not automatically better
 for the team that has it: the 2004-05 Suns were years early and would have been
 early in a way that did not survive the officiating of the time.</p>
 <p>It is also not an intent measure. A team can end up modern by design, by roster
-accident, or by having no center. Nothing here distinguishes them.</p>
+accident, or by having no centre. Nothing here distinguishes them.</p>
 <h2>Franchise continuity</h2>
 <p>Teams are kept under the abbreviation the source file uses, which means Seattle
 appears for five seasons and Oklahoma City separately for seventeen, and Brooklyn
@@ -211,15 +212,16 @@ ordinary.</p>
 larger share of its shots from the corner than almost anyone for a decade. That
 is consistent with a deliberate design and equally consistent with having Bruce
 Bowen, and this data cannot separate a system from a personnel accident.</p>
-<p><strong>Nothing here is about efficiency.</strong> The "value of the shot mix" number holds
+<p><strong>Nothing here is about efficiency.</strong> The &quot;value of the shot mix&quot; number holds
 conversion at the league's own rate in each zone, deliberately, so that it moves
 only when selection moves. A team that took worse shots and made more of them
-looks worse here and scored more points, which is the correct behavior for a
-selection metric and the wrong number to quote at anyone about offense.</p>
+looks worse here and scored more points, which is the correct behaviour for a
+selection metric and the wrong number to quote at anyone about offence.</p>
 <p><strong>Free throws are absent.</strong> Twenty-two seasons of a league that has repeatedly
 changed how it officiates contact, measured with an instrument that cannot see a
 foul.</p>
+
 </div></main>
-<footer class="foot"><div class="wrap"><span>spurs-shot-selection</span><span>figures and tables regenerated by the pipeline in this repository</span></div></footer>
+<footer class="foot"><div class="wrap"><span>spurs-shot-selection</span><span>source, results and validation notes in the repository</span></div></footer>
 </body>
 </html>
