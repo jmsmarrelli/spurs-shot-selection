@@ -1,5 +1,8 @@
 # Method notes
 
+This is a historical comparison through 2024–25. “Years ahead” projects a team’s shot mix onto the league’s observed trajectory; it is not a forecast, an efficiency ranking, or proof that a team invented a strategy. Franchise labels follow the source and span unequal numbers of seasons.
+
+
 The metric, the version of it that was wrong, and what the whole thing cannot see.
 
 ## The unit
@@ -70,7 +73,7 @@ read next to it.
 
 Two details:
 
-* The path is smoothed with a three-season centered window before the
+* The path is smoothed with a three-season centred window before the
   decomposition. Season-to-season wobble in a thirty-team average is small but
   not zero, and matching against an unsmoothed path turns it into fake precision.
 * Teams past either end of the observed path are extrapolated along the axis and
@@ -85,7 +88,7 @@ for the team that has it: the 2004-05 Suns were years early and would have been
 early in a way that did not survive the officiating of the time.
 
 It is also not an intent measure. A team can end up modern by design, by roster
-accident, or by having no center. Nothing here distinguishes them.
+accident, or by having no centre. Nothing here distinguishes them.
 
 ## Franchise continuity
 
@@ -111,8 +114,8 @@ Bowen, and this data cannot separate a system from a personnel accident.
 **Nothing here is about efficiency.** The "value of the shot mix" number holds
 conversion at the league's own rate in each zone, deliberately, so that it moves
 only when selection moves. A team that took worse shots and made more of them
-looks worse here and scored more points, which is the correct behavior for a
-selection metric and the wrong number to quote at anyone about offense.
+looks worse here and scored more points, which is the correct behaviour for a
+selection metric and the wrong number to quote at anyone about offence.
 
 **Free throws are absent.** Twenty-two seasons of a league that has repeatedly
 changed how it officiates contact, measured with an instrument that cannot see a
